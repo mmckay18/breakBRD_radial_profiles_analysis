@@ -1,0 +1,55 @@
+data:
+  sdss_rgb_images_dirpath: ~/phd_projects/breakBRD_radial_profiles_analysis/DATA/SDSS_RGB/
+  all_sdss_rgb_images_dirpath: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/SDSS_RGB/all_sdss_images/
+
+  # GLOBAL TABLES = Integrated photometry and spectroscopy for the sample
+  global_table_dir: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/GLOBAL_TABLES/
+  bbrd_global_table: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/GLOBAL_TABLES/bbrd_global_db.csv
+  11_bbrd_global_table: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/GLOBAL_TABLES/11_bbrd_global_table.csv
+
+  lg12_global_table: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/GLOBAL_TABLES/lg12_global_db.csv
+  csf_global_table: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/GLOBAL_TABLES/sf_lg12_global_df.csv
+  cqc_global_table: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/GLOBAL_TABLES/qc_lg12_global_df.csv
+  cgv_global_table: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/GLOBAL_TABLES/gv_lg12_global_df.csv
+
+  # IFU_SUPER_CSV PATHS = Super means all the CSV for the sample were appended together
+  supercsv_dir: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/SUPER_CSV_TABLES/
+  csf_supercsv: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/SUPER_CSV_TABLES/csf_superifu.csv
+  cqc_supercsv: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/SUPER_CSV_TABLES/cqc_superifu.csv
+  cgv_supercsv: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/SUPER_CSV_TABLES/cgv_superifu.csv
+  bbrd_supercsv: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/SUPER_CSV_TABLES/bbrd_superifu.csv
+
+  # FITS filepath
+  lg12_fits_dir: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/IFU_MAPS_FITS/LG12/
+  bbrd_fits_dir: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/IFU_MAPS_FITS/BBRD/
+
+  # Directorry with flatten maps in CSV
+  lg12_csv_dir: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/IFU_CSVs/LG12_CSVs/
+  bbrd_csv_dir: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/IFU_CSVs/BBRD_CSVs/
+  all_csv_dir: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/IFU_CSVs/ALL_CSVs/
+
+  radial_profiles_dir: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/RADIAL_PROFILE_TABLES/
+
+analysis:
+  csf_radial_profiles: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/RADIAL_PROFILE_TABLES/csf_radial_profiles.csv
+  cgv_radial_profiles: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/RADIAL_PROFILE_TABLES/cgv_radial_profiles.csv
+  cqc_radial_profiles: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/RADIAL_PROFILE_TABLES/cqc_radial_profiles.csv
+  bbrd_radial_profiles: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/RADIAL_PROFILE_TABLES/bbrd_radial_profiles.csv
+  11_bbrd_radial_profiles: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/RADIAL_PROFILE_TABLES/11_radial_profiles.csv
+  lg12_radial_profiles: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/RADIAL_PROFILE_TABLES/lg12_radial_profiles.csv
+
+rejects:
+  vis_rejects_global_table: "/Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/GLOBAL_TABLES/visual_rejects_global_table.csv"
+
+parma:
+  # radial_bins_arr: np.linspace(0.01, 2.0, 11)
+
+process:
+  cols_to_drop:
+    - plateifu.1
+
+plots:
+  plot_dir: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/PLOTS/
+
+  # replace_value:
+  #   - [np.inf, -np.inf]
