@@ -1,37 +1,36 @@
-# breakBRD_radial_profiles_analysis
+# BreakBRD Galaxies II: Radial Profiles of Recent Centrally Star-forming Galaxies
 
 Codebase for creating and analyzing BreakBRD galaxies radial distribution profiles from the SDSS MaNGA survey
-
-# M31 Red Giant Branch Stars Metallicity Distribution Function and Gradient
 
 By Myles McKay(@mmckay18),
 
 ![Astronomy](https://img.shields.io/badge/Field-Astronomy-blue)
-![Last Commit](https://img.shields.io/github/last-commit/mmckay18/phast_rgbstars_mdf)
-![Repo Size](https://img.shields.io/github/repo-size/mmckay18/phast_rgbstars_mdf)
-![Contributors](https://img.shields.io/github/contributors/mmckay18/phast_rgbstars_mdf)
-![Pull Requests](https://img.shields.io/github/issues-pr/mmckay18/phast_rgbstars_mdf)
-![License](https://img.shields.io/github/license/mmckay18/phast_rgbstars_mdf)
-![Issues](https://img.shields.io/github/issues/mmckay18/phast_rgbstars_mdf)
-![Stars](https://img.shields.io/github/stars/mmckay18/phast_rgbstars_mdf)
-![Forks](https://img.shields.io/github/forks/mmckay18/phast_rgbstars_mdf)
+![Last Commit](https://img.shields.io/github/last-commit/mmckay18/breakBRD_radial_profiles_analysis)
+![Repo Size](https://img.shields.io/github/repo-size/mmckay18/breakBRD_radial_profiles_analysis)
+![Contributors](https://img.shields.io/github/contributors/mmckay18/breakBRD_radial_profiles_analysis)
+![Pull Requests](https://img.shields.io/github/issues-pr/mmckay18/breakBRD_radial_profiles_analysis)
+![License](https://img.shields.io/github/license/mmckay18/breakBRD_radial_profiles_analysis)
+![Issues](https://img.shields.io/github/issues/mmckay18/breakBRD_radial_profiles_analysis)
+![Stars](https://img.shields.io/github/stars/mmckay18/breakBRD_radial_profiles_analysis)
+![Forks](https://img.shields.io/github/forks/mmckay18/breakBRD_radial_profiles_analysis)
 
 # Table of Contents
 
 - [Introduction](#introduction)
 - [Research Abstract](#research-abstract)
-- [Data](#data) - [Data Sources](#data-sources) - [Data Acquisition](#data-acquisition) - [Data Preprocessing](#data-preprocessing)
+- [Data](#data)
+  - [Data Sources](#data-sources)
+  - [Data Acquisition](#data-acquisition)
+  - [Data Preprocessing](#data-preprocessing)
 - [Results and Evaluation](#results-and-evaluation)
-  - [PHAT and PHAST RGB Spatial Metallicity Map](#phat-and-phast-rgb-spatial-metallicity-map)
-  - [RGB Metallicity Distribution Function](#rgb-metallicity-distribution-function)
-  - [RGB Metallicity Gradient](#rgb-metallicity-gradient)
+- [Visualization](#visualization)
 - [Future Work](#future-work)
 - [References](#references)
 <!-- - [License](#license) -->
 
 # Introduction
 
-- This repository is made too show the complete workflow for analyzing the 14 distinct galaxies with intresting the star formation distrubiution using integral field unit spectrocopy from the MaNGA survey. I outline the exploratory data analysis, image processing, statistical analysis and data visualization.
+This repository is made too show the complete workflow for analyzing the 14 distinct galaxies with intresting the star formation distrubiution using integral field unit spectrocopy from the MaNGA survey. I outline the exploratory data analysis, image processing, statistical analysis and data visualization.
 
 # Research Abstract
 
