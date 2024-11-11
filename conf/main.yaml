@@ -37,6 +37,7 @@ analysis:
   bbrd_radial_profiles: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/RADIAL_PROFILE_TABLES/bbrd_radial_profiles.csv
   11_bbrd_radial_profiles: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/RADIAL_PROFILE_TABLES/11_radial_profiles.csv
   lg12_radial_profiles: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/RADIAL_PROFILE_TABLES/lg12_radial_profiles.csv
+  vis_vetted_global_table: /Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/GLOBAL_TABLES/vis_vetted_lg12_global.csv
 
 rejects:
   vis_rejects_global_table: "/Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/DATA/GLOBAL_TABLES/visual_rejects_global_table.csv"

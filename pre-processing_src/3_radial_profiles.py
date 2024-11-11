@@ -78,7 +78,7 @@ if __name__ == "__main__":
         "bbrd_global_table",
         '11_bbrd_global_table'
     ]
-    # Itterate through each column and make a radial profile
+    # Itterate through each column and make a radial profile table
     for t in tables:
         print(t)
         samp = t.split("_")[0]

@@ -1,4 +1,5 @@
 """
+Description:
 Pre-processing lg12 and bbrd sample
 
 1. replace inf values with nan
@@ -9,7 +10,7 @@ import numpy as np
 import pandas as pd
 import yaml  # import config.yaml file
 
-with open("/Users/mmckay/phd_projects/breakBRD/conf/main.yaml", "r") as ymlfile:
+with open("/Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/conf/main.yaml", "r") as ymlfile:
     config = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
 
@@ -19,7 +20,7 @@ def replace_inf_with_nan(df):
 
 
 def drop_duplicates(df):
-    df.drop_duplicates(inplace=True)
+    df.drop_duplicates(subset="plateifu", inplace=True)
     return df
 
 
@@ -46,3 +47,5 @@ if __name__ == "__main__":
         lg12_global_df, bbrd_global_df
     )
     lg12_global_df.to_csv(config["data"]["lg12_global_table"], index=False)
+    # print(len(lg12_global_df))
+    lg12_global_df.to_csv(config["data"]["lg12_global_table"])

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Desktop/research/BreakBRD_LG12_analysis_repo/Notebooks"
+		},
+		{
+			"path": "../../research/FMR_MZR/BBRD_FMR_project_repo"
+		}
+	],
+	"settings": {
+		"[python]": {
+			"editor.defaultFormatter": "ms-python.autopep8"
+		},
+		"python.formatting.provider": "none"
+	}
+}

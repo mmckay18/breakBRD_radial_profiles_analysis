@@ -14,7 +14,7 @@ sns.set(style="ticks", context="talk")
 
 # import config.yaml file
 
-with open("/Users/mmckay/phd_projects/breakBRD/conf/main.yaml", "r") as ymlfile:
+with open("/Users/mmckay/phd_projects/breakBRD_radial_profiles_analysis/conf/main.yaml", "r") as ymlfile:
     config = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
 
@@ -85,7 +85,9 @@ def seperate_lg12_table_into_sf_gv_qc(lg12_global_df):
 
 if __name__ == "__main__":
     # Read in the lg12 and bbrd global tables
-    lg12_global_df = pd.read_csv(config["data"]["lg12_global_table"])
+    # lg12_global_df = pd.read_csv(config["data"]["lg12_global_table"])
+    lg12_global_df = pd.read_csv(config["analysis"]["vis_vetted_global_table"])
+    print("LG12 # {}".format(len(lg12_global_df)))
     bbrd_global_df = pd.read_csv(config["data"]["bbrd_global_table"])
     print("BBRD # {}".format(len(bbrd_global_df)))
 
@@ -115,9 +117,11 @@ if __name__ == "__main__":
 
     #! Limit mass range of CSF CGV CQC galaxies
     min_mass = bbrd_global_df["Mstarmed_SDSStotlgm"].describe()["min"]
-    max_mass = bbrd_global_df["Mstarmed_SDSStotlgm"].describe()["max"]
+    # max_mass = bbrd_global_df["Mstarmed_SDSStotlgm"].describe()["max"]
+    max_mass = 11
+    print(f'BBRD min: {min_mass} max: {max_mass}')
 
-    # Limit mass range of LG12 CSF and CQC sample
+    #! Apply Limit mass range of LG12 CSF and CQC sample
     sf_lg12_global_df = sf_lg12_global_df[
         sf_lg12_global_df["Mstarmed_SDSStotlgm"].between(min_mass, max_mass)
     ]
@@ -132,15 +136,15 @@ if __name__ == "__main__":
 
     # Save vetted global data as CSV
     sf_lg12_global_df.to_csv(config["data"]["csf_global_table"])
-    qc_lg12_global_df.to_csv(config["data"]["cqc_global_table"])
     gv_lg12_global_df.to_csv(config["data"]["cgv_global_table"])
+    qc_lg12_global_df.to_csv(config["data"]["cqc_global_table"])
 
     print("CSF # {}".format(len(sf_lg12_global_df)))
     print("CGV # {}".format(len(gv_lg12_global_df)))
     print("CQC # {}".format(len(qc_lg12_global_df)))
     #!----------------------------------------------------------------------------------------------------------------------------
 
-    # Remove visually rejected galaxies from the global tables
+    # Remove visually rejected galaxies from the global tables - not need but just in case
     if os.path.exists(config["rejects"]["vis_rejects_global_table"]):
         print("Reject table exists - removing rejected galaxies from global tables")
         vis_rejects_global_df = pd.read_csv(
