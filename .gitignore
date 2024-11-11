@@ -3,5 +3,4 @@
 *.png
 *.pdf
 # *.jpeg
-breakBRD_radial_profiles_analysis/DATA/SDSS_RGB/
-SDSS_RGB/**
+DATA/
