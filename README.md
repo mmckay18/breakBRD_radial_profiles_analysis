@@ -91,7 +91,7 @@ These findings support the hypothesis that BreakBRD galaxies represent a unique 
 ### Statistical Analysis
 
 <div align="center">
-  <img src="images/m31_analysis_map_subplot.jpeg" alt="Spatial Metallicity Map" width="600"/>
+  <img src="PLOTS" alt="Spatial Metallicity Map" width="600"/>
   <p><b>Figure 1:</b> Maps of M31 RGB median metallicity assuming a fiduicial age of $4$ Gyr in $0.01$" square bins. The red cross shows the center of M31. The top map shows the original M31 RGB map and the bottom shows the map after excluding high dust mass regions, removing the well known dust ring of M31</p>
 </div>
 
