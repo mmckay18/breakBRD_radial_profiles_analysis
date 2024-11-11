@@ -2,4 +2,4 @@
 *.fits
 *.png
 *.pdf
-*.jpeg
+# *.jpeg
